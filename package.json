@@ -1,12 +1,13 @@
 {
   "name": "@rocketbean/create-chasi",
   "_id": "@rocketbean/create-chasi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "chasi template",
-  "main": "init.js",
+  "main": "dist/init.js",
   "type": "module",
   "bin": {
-    "create-chasi": "init.js"
+    "create-chasi": "dist/init.js",
+    "chasi": "./dist/chasi.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

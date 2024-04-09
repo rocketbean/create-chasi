@@ -1,4 +1,4 @@
-import chasi from "../../chasis.config.js";
+import chasi from "../../chasi.config.js";
 import fs from "fs";
 export default (option, name) => {
     let conf = chasi.defaults[option.toLowerCase()];

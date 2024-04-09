@@ -1,4 +1,5 @@
 import readline from "readline";
+import chalk  from "chalk";
 export const loader = {
   prop: null,
   start: (message: string) => {
@@ -6,9 +7,8 @@ export const loader = {
   },
   stop: (message: string) => {
     readline.clearLine(process.stdout, 0)
-    readline.clearLine(process.stdout, 0)
     readline.cursorTo(process.stdout, 0, null)
-    console.log(`\r > ${message}`)
+    process.stdout.write(`\r > ${chalk.bgHex("484276").bold.white(message)}\n`)
     clearInterval(loader.prop);
   },
   load: (message) => {
@@ -20,7 +20,7 @@ export const loader = {
       let str = `\r > ${message}... ${h[i]}`;
       readline.clearLine(process.stdout, 0)
       readline.cursorTo(process.stdout, 0, null)
-      process.stdout.write(str)
+      process.stdout.write(chalk.green(str))
       i++;
     }, 90);
   }

@@ -1,7 +1,7 @@
 {
   "name": "@rocketbean/create-chasi",
   "_id": "@rocketbean/create-chasi",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "chasi template",
   "main": "dist/init.js",
   "type": "module",

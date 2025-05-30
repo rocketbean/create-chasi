@@ -4,8 +4,12 @@ import Provider from "../../package/framework/Services/Provider.js";
 
 export default class ${name}ServiceProvider extends Provider implements ServiceProviderInterface
 {
+  constructor() {}
+  
   async boot() {
     
-  }
+  },
+
+  async beforeServerBoot() {}
 }`;
 };

@@ -1,5 +1,6 @@
 import controller from "./templates/Controller.js"
 import model from "./templates/Model.js"
+import event from "./templates/Event.js";
 import middleware from "./templates/Middleware.js"
 import provider from "./templates/Provider.js"
 import path from "path"
@@ -13,25 +14,30 @@ Object.defineProperty(String.prototype, 'capitalize', {
 const defaults = {
   controller: {
     key: "Controller",
-    path: path.join(process.cwd(), '/src/container/controllers/'),
+    path: path.join(process.cwd(), "/src/container/controllers/"),
     parseContent: controller,
+  },
+  event: {
+    key: "Event",
+    path: path.join(process.cwd(), "/src/container/events/"),
+    parseContent: event,
   },
   middleware: {
     key: ".mw",
-    path: path.join(process.cwd(),'/src/container/middlewares/'),
-    parseContent: middleware
+    path: path.join(process.cwd(), "/src/container/middlewares/"),
+    parseContent: middleware,
   },
   provider: {
     key: "ServiceProvider",
-    path: path.join(process.cwd(),'/src/container/services/'),
-    parseContent: provider
+    path: path.join(process.cwd(), "/src/container/services/"),
+    parseContent: provider,
   },
   model: {
-    key: '',
-    path: path.join(process.cwd(),'/src/container/models/'),
-    parseContent: model
-  }
-}
+    key: "",
+    path: path.join(process.cwd(), "/src/container/models/"),
+    parseContent: model,
+  },
+};
 
 export default {
   defaults,

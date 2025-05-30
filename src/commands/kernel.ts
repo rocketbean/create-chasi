@@ -1,11 +1,12 @@
 import create from "./create/Create.js"
 import init from "./init/Init.js"
 export type createOptions = {
-  controller?: boolean,
-  model?: boolean,
-  provider?: boolean,
-  middleware?: boolean,
-}
+  controller?: boolean;
+  model?: boolean;
+  provider?: boolean;
+  middleware?: boolean;
+  event?: boolean;
+};
 
 export type command = "create" | "init"
 

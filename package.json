@@ -1,7 +1,7 @@
 {
-  "name": "@rocketbean/chasi-ts",
-  "_id": "@rocketbean/chasi-ts",
-  "version": "1.0.6",
+  "name": "@rocketbean/create-chasi-ts",
+  "_id": "@rocketbean/create-chasi-ts",
+  "version": "1.0.7",
   "description": "chasi template",
   "main": "dist/init.js",
   "type": "module",
@@ -9,15 +9,16 @@
     "access": "public"
   },
   "bin": {
-    "create-chasi": "dist/init.js",
-    "chasi": "./dist/chasi.js"
+    "create-chasi-ts": "dist/init.js",
+    "chasi": "./dist/chasi.js",
+    "create": "dist/init.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rocketbean/chasis.git"
+    "url": "git+https://github.com/rocketbean/create-chasi.git"
   },
   "keywords": [
     "chasi-cli",
@@ -31,7 +32,6 @@
   },
   "homepage": "https://github.com/rocketbean/chasis#readme",
   "dependencies": {
-    "@rocketbean/create-chasi": "^1.0.5",
     "@types/chalk": "^2.2.0",
     "@types/node": "^20.12.3",
     "chalk": "^5.3.0",
